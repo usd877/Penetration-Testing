@@ -121,6 +121,24 @@
 - **Оценка:** High
 
 ## 5. Уязвимости
+
+# nmap -sV --script vulners 92.51.39.106
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-02-27 11:41 EST
+Nmap scan report for 1427771-cg36175.tw1.ru (92.51.39.106)
+Host is up (0.0017s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.12 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.2p1: 
+|       2C119FFA-ECE0-5E14-A4A4-354A2C38071A    10.0    https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A  *EXPLOIT*
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23  *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623  *EXPLOIT*
+|       8AD01159-548E-546E-AA87-2DE89F3927EC    9.8     https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC  *EXPLOIT*
+|       887EB570-27D3-11EE-ADBA-C80AA9043978    9.8     https://vulners.com/freebsd/887EB570-27D3-11EE-ADBA-C80AA9043978
+
 ### OpenSSH 8.2p1:
 Версия OpenSSH 8.2p1 имеет несколько известных уязвимостей, связанных с реализацией протокола SSH и другими компонентами сервиса.
 
