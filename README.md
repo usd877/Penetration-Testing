@@ -70,6 +70,8 @@
 
 ![nmap](https://github.com/user-attachments/assets/bb95d2a2-3946-4a39-9f43-1c3e4bc4f3b5)
 
+![nmap -p- -T4 -A -v 92 51 39 106 -oA nmap_scan](https://github.com/user-attachments/assets/4daa1087-d81c-43c2-a6e2-1e3795d40b9f)
+
 
 **Результаты:**
 - Открыт порт 22 (SSH, OpenSSH 8.2p1).
