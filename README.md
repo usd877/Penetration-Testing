@@ -53,6 +53,9 @@
 - Используемые технологии: HTML5, jQuery, Lightbox, JavaScript
 - Заголовок страницы: Beemer
 
+- ![whatweb](https://github.com/user-attachments/assets/72df0a3f-4ce3-4cc9-b620-19b9e49b4fac)
+
+
 ### 4.2. Nikto Scan
 **Результаты:**
 - Отсутствует заголовок X-Frame-Options (возможны clickjacking-атаки).
