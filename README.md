@@ -57,26 +57,50 @@
 - Заголовок страницы: Beemer
 
 ### 4.2. Nikto Scan
+
+![nikto](https://github.com/user-attachments/assets/12efd8e7-ad59-4e1c-9628-02e810ace15b)
+
+
 **Результаты:**
 - Отсутствует заголовок X-Frame-Options (возможны clickjacking-атаки).
 - Отсутствует заголовок X-Content-Type-Options.
 - Обнаружена страница /login.html.
 
 ### 4.3. Nmap Scan
+
+![nmap](https://github.com/user-attachments/assets/bb95d2a2-3946-4a39-9f43-1c3e4bc4f3b5)
+
+
 **Результаты:**
 - Открыт порт 22 (SSH, OpenSSH 8.2p1).
 - ОС: Linux 2.4.X (устаревшая версия).
 
 ### 4.4. Gobuster Scan
+
+![gobuster](https://github.com/user-attachments/assets/de8b3a6e-3f39-4170-bcda-f26f43be4090)
+
+
 **Результаты:**
 - Доступны страницы: /search, /read, /index_html.
 - Страница /upload возвращает ошибку 405 (Method Not Allowed).
 
 ### 4.5. SQLMap Scan
+
+![sql 1](https://github.com/user-attachments/assets/415ae796-727d-4043-a8a0-b5900ca2fd84)
+
+![sql 2](https://github.com/user-attachments/assets/68f2cc9e-642a-4b5f-bedf-6136e1cc7a5a)
+
+![sql 3](https://github.com/user-attachments/assets/62350208-4141-4ad8-8094-85b16147f1c9)
+
+
 **Результаты:**
 - URL http://92.51.39.106:7788/login вернул ошибку 404 (Not Found).
 
 ### 4.6. Ручное тестирование
+
+![логин и пароль SQL Injection (SQLi)](https://github.com/user-attachments/assets/7e12c110-9b2b-49cb-b400-f28f240bd9ee)
+
+
 #### SQL Injection (SQLi)
 - **URL:** http://92.51.39.106/login
 - **Payload:** ' OR 1=1 --
@@ -84,6 +108,13 @@
 - **Оценка:** Critical
 
 #### XSS
+
+![Тестирование на XSS (Cross-Site Scripting) приложение уязвимо](https://github.com/user-attachments/assets/dd602c13-06bf-4108-8e5d-01cc61db50de)
+
+![XSS уязвимости, при котором можно задействовать события JavaScript](https://github.com/user-attachments/assets/ac6e4777-0bc4-4d1a-921a-903c0d95c6c5)
+
+
+
 - **URL:** http://92.51.39.106/comments
 - **Payload:** <script>alert('XSS')</script>
 - **Результат:** Всплывающее окно с сообщением "XSS".
