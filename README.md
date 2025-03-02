@@ -49,12 +49,18 @@
 
 ### 4.1. WhatWeb Scan
 
+![whatweb](https://github.com/user-attachments/assets/8ea323cb-6f05-4a46-922c-e1ac7eae7a4e)
+
+
 **Результаты:**
 - HTTP-сервер: TornadoServer 5.1.1
 - Используемые технологии: HTML5, jQuery, Lightbox, JavaScript
 - Заголовок страницы: Beemer
 
 ### 4.2. Nikto Scan
+
+![nikto](https://github.com/user-attachments/assets/16f18aa3-3ae3-450e-8a95-30bfd4390db2)
+
 
 **Результаты:**
 - Отсутствует заголовок X-Frame-Options (возможны clickjacking-атаки).
@@ -63,11 +69,17 @@
 
 ### 4.3. Nmap Scan
 
+![nmap](https://github.com/user-attachments/assets/54a1ea9a-4fca-4731-9fc4-5059f1d84d00)
+
+
 **Результаты:**
 - Открыт порт 22 (SSH, OpenSSH 8.2p1).
 - ОС: Linux 2.4.X (устаревшая версия).
 
 ### 4.4. Gobuster Scan
+
+![gobuster](https://github.com/user-attachments/assets/cdc5a983-61be-45d5-9cd5-030d52cbe9ed)
+
 
 **Результаты:**
 - Доступны страницы: /search, /read, /index_html.
@@ -75,10 +87,20 @@
 
 ### 4.5. SQLMap Scan
 
+![sql 1](https://github.com/user-attachments/assets/2e7d8417-212a-4820-b487-b49dc19201d3)
+
+![sql 2](https://github.com/user-attachments/assets/4b18c0d2-a954-4279-8eac-59e74907dcd8)
+
+![sql 3](https://github.com/user-attachments/assets/ee6a93f4-a8f2-4da6-8dcc-a6e51d34ee55)
+
+
 **Результаты:**
 - URL http://92.51.39.106:7788/login вернул ошибку 404 (Not Found).
 
 ### 4.6. Ручное тестирование
+
+![логин и пароль SQL Injection (SQLi)](https://github.com/user-attachments/assets/2bc6d15a-a74e-4a32-b246-190d49582911)
+
 
 #### SQL Injection (SQLi)
 - **URL:** http://92.51.39.106/login
@@ -87,6 +109,11 @@
 - **Оценка:** Critical
 
 #### XSS
+
+![XSS уязвимости, при котором можно задействовать события JavaScript](https://github.com/user-attachments/assets/3318f7f9-1648-415b-bfb1-1fb4e3a8d192)
+
+![Тестирование на XSS (Cross-Site Scripting) приложение уязвимо](https://github.com/user-attachments/assets/892e10fb-a018-4a0c-b48b-1a159f0e742d)
+
 
 - **URL:** http://92.51.39.106/comments
 - **Payload:** <script>alert('XSS')</script>
