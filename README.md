@@ -98,11 +98,11 @@
 - URL http://92.51.39.106:7788/login вернул ошибку 404 (Not Found).
 
 ### 4.6. Ручное тестирование
+#### SQL Injection (SQLi)
 
 ![логин и пароль SQL Injection (SQLi)](https://github.com/user-attachments/assets/2bc6d15a-a74e-4a32-b246-190d49582911)
 
 
-#### SQL Injection (SQLi)
 - **URL:** http://92.51.39.106/login
 - **Payload:** ' OR 1=1 --
 - **Результат:** Успешный обход аутентификации.
