@@ -163,7 +163,7 @@ print(f"Найдено уязвимостей: {len(alerts)}")
 
 ## 6. Уязвимости
 
-# nmap -sV --script vulners 92.51.39.106
+### nmap -sV --script vulners 92.51.39.106
 
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-02-27 11:41 EST
 Nmap scan report for 1427771-cg36175.tw1.ru (92.51.39.106)
